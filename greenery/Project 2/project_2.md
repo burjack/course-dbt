@@ -4,16 +4,16 @@
 ## Part 1:
 
  - **Question 1**: What is our user repeat rate? Repeat Rate = Users who purchased 2 or more times / users who purchased.
- 
+
     **Answer :**
     Among all orders placed up to the moment the repeat rate is 76.1%
 
-**Query :**  
-```sql  
-    SELECT AVG(CASE WHEN count_orders >= 2 THEN 1 ELSE 0 END) AS rate_return 
-    FROM DEV_DB.DBT_BURJACK86GMAILCOM.FACT_USERS_ORDERS
-```
-  
+    **Query :**  
+    ```sql  
+        SELECT AVG(CASE WHEN count_orders >= 2 THEN 1 ELSE 0 END) AS rate_return 
+        FROM DEV_DB.DBT_BURJACK86GMAILCOM.FACT_USERS_ORDERS
+    ```
+
  - **Question 2:** 
     What are good indicators of a user who will likely purchase again? What about indicators of users who are likely NOT to purchase again? If you had more data, what features would you want to look into to answer this question?
     
