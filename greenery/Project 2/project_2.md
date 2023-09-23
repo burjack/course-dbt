@@ -5,8 +5,8 @@
 
  - **Question 1**: What is our user repeat rate? Repeat Rate = Users who purchased 2 or more times / users who purchased.
  
-**Answer :**
-Among all orders placed up to the moment the repeat rate is 76.1%
+    **Answer :**
+    Among all orders placed up to the moment the repeat rate is 76.1%
 
 **Query :**  
 ```sql  
@@ -14,13 +14,15 @@ Among all orders placed up to the moment the repeat rate is 76.1%
     FROM DEV_DB.DBT_BURJACK86GMAILCOM.FACT_USERS_ORDERS
 ```
   
- - **Question 2:** What are good indicators of a user who will likely purchase again? What about indicators of users who are likely NOT to purchase again? If you had more data, what features would you want to look into to answer this question?
-  **Answer :**  
- I believe that users' first review of the product and time to delivery the product the could help to answer those questions. I would add users' first review since it is not available.
+ - **Question 2:** 
+    What are good indicators of a user who will likely purchase again? What about indicators of users who are likely NOT to purchase again? If you had more data, what features would you want to look into to answer this question?
+    
+    **Answer :**  
+    I believe that users' first review of the product and time to delivery the product the could help to answer those questions. I would add users' first review since it is not available.
     
  - **Question 3:** Why did you organize the models in the way you did?
- **Answer :**  
-The models were organized in a way that users could readily identify the purpose of the table and also to separate models according to the company's busiess model organization (tihe different folders in marts).
+    **Answer :**  
+    The models were organized in a way that users could readily identify the purpose of the table and also to separate models according to the company's busiess model organization (tihe different folders in marts).
 
 
 
