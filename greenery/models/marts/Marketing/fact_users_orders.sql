@@ -11,7 +11,7 @@ SELECT
     , date(min(o.created_at)) AS first_order_date
     , date(max(o.created_at)) AS last_order_date
     , round(avg(o.order_total),2) AS avg_order_total
-FROM {{ ref ('stg_postgres__users') }} u 
+FROM {{ ref ('stg_postgres__users') }} u
 LEFT JOIN {{ ref ('stg_postgres__orders') }} o 
 ON u.user_id = o.user_id
 WHERE o.status = 'delivered'

@@ -3,7 +3,7 @@ version: 2
 models:
 
   - name: users_products_qty
-    description: Table containing product quantity purchased by each user
+    description: Table containing products infortion (viwed, added to chart, purchased) in events made by customers
     columns:
       - name: user_id
         description: Unique user ID in the platform

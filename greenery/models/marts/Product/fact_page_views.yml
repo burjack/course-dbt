@@ -1,0 +1,28 @@
+version: 2
+
+models:
+
+  - name: fact_page_views
+    description: Table containing product views, added to charts and purchased
+    columns:
+      - name: event_id
+        description: Unique event ID in the platform (Primary key)
+        tests:
+          - unique
+          - not_null
+      - name: session_id
+        description: Session browsing ID
+      - name: user_id
+        description: User ID indicating to whom the event is associated with
+      - name: created_at
+        description: Timestamp of the event when it was created (UTC)
+      - name: product_id
+        description: Unique user ID in the platform
+      - name: product_name
+        description: Product name
+      - name: products_added_to_cart_during_session
+        description: Products added to cart during session
+      - name: quantities_purchased_by_user
+        description: Quantities purchased by user
+      - name: session_time_min
+        description: Time elapsed in minutes during that session
