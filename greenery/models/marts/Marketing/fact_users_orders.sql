@@ -14,5 +14,4 @@ SELECT
 FROM {{ ref ('stg_postgres__users') }} u
 LEFT JOIN {{ ref ('stg_postgres__orders') }} o 
 ON u.user_id = o.user_id
-WHERE o.status = 'delivered'
 group by all
