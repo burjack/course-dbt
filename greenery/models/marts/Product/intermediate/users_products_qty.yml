@@ -1,0 +1,13 @@
+version: 2
+
+models:
+
+  - name: users_products_qty
+    description: Table containing product quantity purchased by each user
+    columns:
+      - name: user_id
+        description: Unique user ID in the platform
+      - name: product_id
+        description: Product id
+      - name: qty_purchased
+        description: Quantity ppurchased by user ever
