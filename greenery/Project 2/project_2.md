@@ -30,12 +30,14 @@
 ## Part 2:
 
  - **Question 1**: What assumptions are you making about each model? (i.e. why are you adding each test?)
+    
     **Answer :**
     In every table that has a unique primary key I made tests for uniqueness and not_null. These tests are important to guarantee consistency, for example, make sure that clients or orders are not duplicated in the platform.
 
 ## Part 3:
 
  - **Question 2**: Which products had their inventory change from week 1 to week 2? 
+    
     **Answer :**
     On the table below you can the products that had their inventory changed. In addition, the current inventory (INVENTORY) and how much it changed (INV_CHANGE) are also available.
 
