@@ -2,7 +2,7 @@ version: 2
 
 models:
 
-  - name: users_orders_facts
+  - name: fact_users_orders
     description: Table containing users details such as ID, name, last name, email, phone number, etc
     columns:
       - name: user_id
