@@ -34,9 +34,15 @@
     **Answer :**
     In every table that has a unique primary key I made tests for uniqueness and not_null. These tests are important to guarantee consistency, for example, make sure that clients or orders are not duplicated in the platform.
 
+ - **Question 2**: Did you find any “bad” data as you added and ran tests on your models? How did you go about either cleaning the data in the dbt model or adjusting your assumptions/tests?
+    
+    **Answer :**
+    I didn't find nay “bad” in my models after adding the tests and running them. Since I found no “bad” data there was no need to review it.
+
+
 ## Part 3:
 
- - **Question 2**: Which products had their inventory change from week 1 to week 2? 
+ - **Question 1**: Which products had their inventory change from week 1 to week 2? 
     
     **Answer :**
     On the table below you can the products that had their inventory changed. In addition, the current inventory (INVENTORY) and how much it changed (INV_CHANGE) are also available.
