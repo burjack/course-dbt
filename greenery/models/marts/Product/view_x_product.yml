@@ -1,0 +1,18 @@
+version: 2
+
+models:
+
+  - name: view_x_product
+    description: Table containing products views, time added to chart and average time session
+    columns:
+      - name: product_id
+        description: Unique product ID in the platform (Primary key)
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: Product name
+      - name: view_count
+        description: View count per product
+      - name: added_to_cart
+        description: Added to cart count per product
