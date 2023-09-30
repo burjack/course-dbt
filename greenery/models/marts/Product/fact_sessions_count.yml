@@ -1,0 +1,18 @@
+models:
+  - name: fact_sessions_count
+    description: "Count of events for each session that has occured in the platform"
+    columns:
+      - name: session_id
+        description: "session browsing ID  (Primary key)"
+
+      - name: page_view
+        description: "Count of page views during sesions"
+
+      - name: add_to_cart
+        description: "Count of add to cart during sesions"
+
+      - name: checkout
+        description: "Count of checkots during sesions"
+
+      - name: package_shipped
+        description: "Count of packages shipped during sesions"
