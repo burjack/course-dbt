@@ -8,7 +8,7 @@ set event_types = dbt_utils.get_column_values(
 -%}
 
 {%- for event_type in event_types %}
-, count(event_type = '{{ event_type}}' ) then
+, count(case when event_type = '{{ event_type }}' THEN event_type END) as {{ event_type }}
 {%- endfor %}
 
 {%- endmacro %}
