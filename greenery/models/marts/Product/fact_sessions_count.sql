@@ -1,3 +1,9 @@
+{{
+  config(
+    post_hook = 'grant select on {{ this }} to role REPORTING'
+  )
+}}
+
 with fact_sessions_counts as (
 select 
     session_id
